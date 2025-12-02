@@ -10,59 +10,56 @@
 <body>
     
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<style>
-  .red-text {
-    color: red;
-  }
+ <style>
+        .box {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #f2f2f2;
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
 
-  h2 {
-    font-family: Lobster, Monospace;
-  }
-
-  p {
-    font-size: 16px;
-    font-family: Monospace;
-  }
-
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
-  .smaller-image {
-    width: 100px;
-  }
-</style>
+<!-- پہلے 4 divs میں container-fluid -->
 <div class="container-fluid">
-<h2 class="red-text">CatPhotoApp</h2>
+    <div class="box">
+        <h2>Box 1</h2>
+        <p>یہ پورے screen کی چوڑائی میں ہے (fluid container)۔</p>
+    </div>
+    <div class="box">
+        <h2>Box 2</h2>
+        <p>یہ بھی پورے screen کی چوڑائی میں ہے (fluid container)۔</p>
+    </div>
+    <div class="box">
+        <h2>Box 3</h2>
+        <p>یہ بھی پورے screen کی چوڑائی میں ہے (fluid container)۔</p>
+    </div>
+    <div class="box">
+        <h2>Box 4</h2>
+        <p>یہ بھی پورے screen کی چوڑائی میں ہے (fluid container)۔</p>
+    </div>
+</div>
 
-<p>Click here for <a href="#">cat photos</a>.</p>
-
-<a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-
-<p>Things cats love:</p>
-<ul>
-  <li>catnip</li>
-  <li>laser pointers</li>
-  <li>lasagna</li>
-</ul>
-<p>Top 3 things cats hate:</p>
-<ol>
-  <li>flea treatment</li>
-  <li>thunder</li>
-  <li>other cats</li>
-</ol>
-<form action="https://freecatphotoapp.com/submit-cat-photo">
-  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-  <label><input type="checkbox" name="personality"> Loving</label>
-  <label><input type="checkbox" name="personality"> Lazy</label>
-  <label><input type="checkbox" name="personality"> Crazy</label>
-  <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
-</form>
+<!-- باقی 4 divs میں کوئی container-fluid نہیں -->
+<div class="box">
+    <h2>Box 5</h2>
+    <p>یہ صرف normal div ہے، اس کی چوڑائی screen کے مطابق محدود ہے۔</p>
+</div>
+<div class="box">
+    <h2>Box 6</h2>
+    <p>یہ بھی normal div ہے، container-fluid نہیں۔</p>
+</div>
+<div class="box">
+    <h2>Box 7</h2>
+    <p>یہ بھی normal div ہے، container-fluid نہیں۔</p>
+</div>
+<div class="box">
+    <h2>Box 8</h2>
+    <p>یہ بھی normal div ہے، container-fluid نہیں۔</p>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
